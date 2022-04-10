@@ -1,4 +1,4 @@
-# fighting-game
+# A Plain Javascript Fighting Game
 Made with the help of a tutorial, then improved upon.
 
 ## Additions
