@@ -1,7 +1,7 @@
 # A Plain Javascript Fighting Game
 Made with the help of a tutorial, then improved upon.
 
-## Additions
+## Improvments made
 - Start screen 
 - Jump detection (no jump spamming) 
 - Better hitboxes 
