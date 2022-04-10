@@ -1,0 +1,83 @@
+<html>
+    <head>
+
+        <title>Fighting Game</title>
+        <link href="style.css" rel="stylesheet">
+
+        <!--Font-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        
+        <div id="container">
+
+            <div id="start-screen">
+                <button class="start-button pixel-border" id="play" onclick="startGame()">Play</button>
+                <button class="start-button pixel-border" id="controls" onclick="controls()">Controls</button>
+                <div id="controls-popup">
+                    <div id="player1-controls" class="player-controls">
+                        <img id="p1-image" class='player-image' src="img/samuraiMack/base.png">
+                        <div id="p1-controls" class="controls-actual">
+                            <kbd>W</kbd> to jump. <kbd>A</kbd> to move left. <kbd>D</kbd> to move right. <kbd>S</kbd> to attack.
+                        </div>
+                    </div>
+
+                    <div id="player2-controls" class="player-controls">
+                        <div id="p2-controls" class="controls-actual">
+                            <kbd>↑</kbd> to jump. <kbd>←</kbd> to move left. <kbd>→</kbd> to move right. <kbd>↓</kbd> to attack.
+                        </div>
+                        <img id="p2-image" class="player-image" src="img/kenji/base.png">
+                    </div>
+
+                    <button id="close-controls" class="pixel-border" onclick="closeControls()">Close</button>
+                </div>
+            </div>
+
+            <div id="top-bar">
+                <!-- p1 hp -->
+                <div class="health-holder" id="player-hp-holder">
+                    <div id="p-health-outline"></div>
+                    <div class="health-bar" id="player-health"></div>
+                </div>
+
+                <!-- setting this actually sets time -->
+                <div id="timer" class="pixel-border">
+                    61
+                </div>
+
+
+                <!-- p2 hp -->
+                <div class="health-holder">
+                    <div id="e-health-outline" id="enemy-hp-holder"></div>
+                    <div class="health-bar" id="enemy-health"></div>
+                </div>
+            </div>
+        </div>
+        
+        <div id="winner-overall-container">
+            <div id="winner-container">
+                <div id="winner">
+                    ?
+                </div>
+                <button id="play-again" class="pixel-border" onclick="playAgain()">Play again</button>
+                <button id="back-to-menu" class="pixel-border" onclick="showMenu()">Show menu</button>
+            </div>
+        </div>
+
+        <div id="audio-player-container">
+            <audio src="music/afterglow.mp3" preload="metadata" loop id="audio"></audio>
+            <button id="audio-play-icon"></button>
+          </div>
+
+        <canvas width="1024" height="576"></canvas>
+
+
+        <script src="js/utils.js"></script>
+        <script src="js/classes.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.9.2/lottie.min.js"></script>
+        <script src="js/audio.js"></script>
+        <script src="index.js"></script>
+    </body>
+</html>
