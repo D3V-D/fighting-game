@@ -8,3 +8,5 @@ Made with the help of a tutorial, then improved upon.
 - Cannot walk through sides of the game
 - Game is *more* responsive. Instead of 1024 x 576, now fullscreen. (Still, recommended to have a similar ratio). 
 - Added music 
+- Play again and back to menu buttons
+- Controls section in menu
