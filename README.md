@@ -10,3 +10,19 @@ Made with the help of a tutorial, then improved upon.
 - Added music 
 - Play again and back to menu buttons
 - Controls section in menu
+
+## Controls
+
+Movement and attack controls. Note, characters do not turn.
+
+### Player 1 (Samurai Mack)
+- <kbd>W</kbd> - Jump
+- <kbd>A</kbd> - Move left
+- <kbd>D</kbd> - Move right
+- <kbd>S</kbd> - Attack
+
+### Player 2 (Kenji)
+- <kbd>↑</kbd> - Jump
+- <kbd>←</kbd> - Move left
+- <kbd>→</kbd> - Move right
+- <kbd>↓</kbd> - Attack
