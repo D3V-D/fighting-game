@@ -235,7 +235,7 @@ function animate() {
     //detect enemy collisions
     if (rectangularCollision({rectangle1: enemy, rectangle2: player}) && enemy.isAttacking) {
         if (player.health > 0 && enemy.health > 0 && timer_time != 0) {
-            player.takeHit(10)
+            player.takeHit(5)
             healthBar(player, '#player-health')
         }
         enemy.isAttacking = false
